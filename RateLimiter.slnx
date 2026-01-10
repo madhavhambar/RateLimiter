@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="RateLimiter.Api/RateLimiter.Api.csproj" />
+  <Project Path="RateLimiter.Tests/RateLimiter.Tests.csproj" />
+</Solution>

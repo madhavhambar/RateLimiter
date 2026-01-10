@@ -1,0 +1,39 @@
+## Build results
+bin/
+obj/
+
+## Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS Code
+.idea/
+.vscode/
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## Test results
+TestResults/
+
+## NuGet
+*.nupkg
+packages/
+
+## Publish output
+publish/
+
+## Environment / secrets
+appsettings.Development.json
+appsettings.Production.json
+*.env
+
+## Docker
+docker-compose.override.yml
