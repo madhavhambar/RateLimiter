@@ -49,15 +49,15 @@ dotnet test
 
 ### Rate Limiting Algorithm
 
-The service uses a **Sliding Window Counter** approach implemented with time-based buckets.  
-Each incoming request increments a counter associated with a unique identifier and the current time window.
+The service uses a **Fixed Window Counter** approach implemented with time-based buckets.
+Each incoming request increments a counter associated with a unique identifier and the
+current fixed time window.
 
 #### Why this algorithm?
-- More accurate than a simple fixed window counter
-- Simpler and more memory-efficient than a full sliding window log
-- Easy to adapt to distributed stores such as Redis using atomic `INCR` and `EXPIRE` operations
-
-This approach provides a good balance between **accuracy, performance, and implementation simplicity**.
+- Simple and efficient with constant-time operations
+- Low memory overhead compared to sliding window logs
+- Easy to adapt to distributed stores such as Redis using atomic `INCR` and `EXPIRE`
+- Suitable for in-memory and demonstration use cases
 
 ---
 
